@@ -1,21 +1,15 @@
-import React, { useState } from 'react';
-import DefaultButton from './components/DefaultButton/DefaultButton';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ButtonPage from './pages/button/ButtonPage/ButtonPage';
 
-const App: React.FC = () => {
 
-  const [name, setName] : [string, any] = useState('')
-
-  const handleInput: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-    setName(e.target.value)
-  }
-
-  return (
-    <div className="App">
-      <input onChange={handleInput}></input>
-      <div>
-        <DefaultButton content={name}/>
-      </div>
-    </div>
+const App = () => {
+return (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/button" element={<ButtonPage text={`버튼`}/>}/>
+    </Routes>
+  </BrowserRouter>
   );
 }
 

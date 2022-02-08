@@ -7,3 +7,55 @@ $pink: (
   lighter: #f06292,
   lightest: #fce4ec,
 );
+
+$gray: (
+  text: #888888,
+  disable: #e0e0e0,
+  primary: #9e9e9e,
+  dark: #757575,
+  darker: #616161,
+  darkest: #424242,
+  light: #e0e0e0,
+  lighter: #eeeeee,
+  lightest: #fafafa,
+);
+
+$black: (
+  text: #000000,
+);
+
+$white: (
+  text: #ffffff,
+);
+
+$blue: (
+  primary: #42a5f5,
+  dark: #1e88e5,
+  darker: #1976d2,
+  darkest: #0d47a1,
+  light: #90caf9,
+  lighter: #bbdefb,
+  lightest: #e3f2fd,
+);
+
+$red: (
+  primary: #e53935,
+  dark: #d32f2f,
+  darker: #c62828,
+  darkest: #b71c1c,
+  light: #f44336,
+  lighter: #ef5350,
+  lightest: #ffcdd2,
+);
+
+$colors: (
+  "pink": $pink,
+  "gray": $gray,
+  "blue": $blue,
+);
+
+$font-colors: (
+  "gray": $gray,
+  "white": $white,
+  "black": $black,
+);

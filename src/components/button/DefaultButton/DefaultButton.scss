@@ -1,0 +1,23 @@
+@import "../../../color.scss";
+@import "../../../common-mixin.scss";
+
+.default_button_wrap {
+  padding: 0vw 1vw;
+}
+
+@each $color, $value in $colors {
+  .default_button_#{$color} {
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    width: 7vw;
+    height: 2vw;
+    @include changeColor($value);
+  }
+}
+
+@each $key, $value in $font-colors {
+  .font_#{$key} {
+    color: map-get($value, text);
+  }
+}

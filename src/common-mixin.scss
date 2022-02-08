@@ -1,0 +1,10 @@
+@mixin changeColor($color) {
+  background-color: map-get($color, primary);
+  &:hover {
+    background-color: map-get($color, darker);
+  }
+  &:active {
+    background-color: map-get($color, darkest);
+  }
+  background-color: map-get($color, primary);
+}
