@@ -12,5 +12,5 @@ export const defaultButton = () => {
 }
 
 defaultButton.story = {
-  name:"defaultButton"
+  name:"DefaultButton"
 }

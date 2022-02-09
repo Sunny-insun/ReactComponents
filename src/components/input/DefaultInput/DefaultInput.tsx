@@ -8,6 +8,7 @@ type InputProps = {
 const DefaultInput : React.FC<InputProps> = ({label}) =>{
 
     let [input, setInput] : [string, any] = useState('') //state
+    
     const handleInput: React.ChangeEventHandler<HTMLInputElement> = (e) => {
         setInput(e.target.value);
       }
